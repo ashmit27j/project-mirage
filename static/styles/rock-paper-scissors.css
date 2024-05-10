@@ -8,10 +8,31 @@ body {
   align-items: center;
   height: 100vh;
   flex-direction: column;
+  overflow: hidden;
+  background-image: url(../images/rockpaperscissor_bg.png);
+  backdrop-filter: brightness(70%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(68, 68, 68, 0.564);
+  border: 5px;
+  border-style: solid;
+  border-color: #3b3b3b;
+  /* box-shadow: 0 0 30px 30px #6e6e6e; */
+  padding: 5rem;
+  padding-right: 10rem;
+  padding-left: 10rem;
 }
 
 .title {
-  font-size: 30px;
+  font-size: 60px;
   font-weight: bold;
 }
 
@@ -22,41 +43,81 @@ body {
 .move-button {
   background-color: transparent;
   border: 2px solid white;
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
   margin-right: 10px;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all 0.5s ease;
 }
 
 .move-button:hover {
-  background-color: #F8F7F4;
+  background-color: #f8f7f4;
 }
 
 .js-result {
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bold;
   margin-top: 50px;
 }
 
 .js-moves {
-  font-size: 20px;
-  margin-top: 20px;
+  text-align: center;
+  font-size: 40px;
+  margin-top: -20px;
   font-weight: bold;
 }
 
 .js-score {
-  margin-top: 60px;
-  font-size: 20px;
+  margin-top: 0px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 2rem;
+}
+
+.js-wins {
+  background-color: #2ecc71;
+  height: 4rem;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+.js-losses {
+  background-color: #ff3838;
+  height: 4rem;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+.js-ties {
+  background-color: #38a0ff;
+  height: 4rem;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .menu-btn {
-  background-color: transparent;
+  background-color: #3b3b3b;
+  height: 4rem;
+  width: 12rem;
   color: white;
   font-size: 20px;
-  padding: 10px 20px;
-  margin: 5px;
   border: 2px solid white;
   border-radius: 10px;
   transition: all 0.15s ease;
@@ -88,7 +149,7 @@ nav {
 
 .logo img {
   height: 80px;
-	width: 80px;
+  width: 80px;
 }
 
 nav ul {
@@ -106,13 +167,13 @@ nav ul li a {
   text-decoration: none;
   color: #fff;
   transition: color 0.3s ease;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Space Mono", monospace;
 }
 
 nav ul li a:hover {
   color: #3498db;
 }
 
-.js-spock-button>img {
+.js-spock-button > img {
   transform: scale(2);
 }

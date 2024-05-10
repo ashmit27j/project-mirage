@@ -2,29 +2,27 @@ body {
   align-items: center;
   text-align: center;
   background-color: #111;
-  ;
-  color: #00ADEF;
+  color: #00adef;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
+  overflow: hidden;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 form input,
 button {
   width: 10rem;
-
 }
 
 form input {
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #00ADEF;
+  border-bottom: 2px solid #00adef;
   margin: 2rem;
   outline: none;
   font-size: 1.75rem;
@@ -34,11 +32,11 @@ form input {
 
 button {
   background-color: transparent;
-  border-color: #00ADEF;
+  border-color: #00adef;
   border-radius: 2rem;
   height: 3rem;
   color: aliceblue;
-  background-color: #1D418C;
+  background-color: #1d418c;
   font-weight: bolder;
   font-size: 1.3rem;
 }
@@ -52,20 +50,18 @@ h1 {
   animation: col_change 1s infinite;
 }
 
-
 @keyframes col_change {
   0% {
-    color: #1D418C;
+    color: #1d418c;
   }
 
   25% {
     color: red;
     transform: rotate(360deg);
-
   }
 
   50% {
-    color: #00ADEF;
+    color: #00adef;
     font-size: 4rem;
   }
 
@@ -88,14 +84,15 @@ nav {
   z-index: 2;
 }
 
-.logo, .nav-text {
+.logo,
+.nav-text {
   display: inline-flex;
   align-items: center;
 }
 
 .logo img {
-  height: 80px; 
-	width: 80px;
+  height: 80px;
+  width: 80px;
 }
 
 nav ul {
@@ -111,18 +108,18 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #fff; 
+  color: #fff;
   transition: color 0.3s ease;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Space Mono", monospace;
 }
 
 nav ul li a:hover {
-  color: #3498db; 
+  color: #3498db;
 }
 
 .nav-text {
-  font-size: 40px; 
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white; 
-  margin-left: 20px;  
+  font-size: 40px;
+  font-family: "Space Mono", monospace;
+  color: white;
+  margin-left: 20px;
 }

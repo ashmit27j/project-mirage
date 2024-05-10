@@ -29,7 +29,13 @@ body {
   margin-top: 27rem;
   margin-left: 0;
   width: 1.3vmin;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent, rgba(255, 255, 255, 0.2)), linear-gradient(to top, transparent 9%, #2a7a14, #8eff7c);
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2),
+      transparent,
+      rgba(255, 255, 255, 0.2)
+    ),
+    linear-gradient(to top, transparent 9%, #2a7a14, #8eff7c);
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -110,7 +116,13 @@ body {
   margin-top: 27rem;
   margin-left: 36%;
   width: 1.3vmin;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent, rgba(255, 255, 255, 0.2)), linear-gradient(to top, transparent 9%, #2a7a14, #8eff7c);
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2),
+      transparent,
+      rgba(255, 255, 255, 0.2)
+    ),
+    linear-gradient(to top, transparent 9%, #2a7a14, #8eff7c);
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
   transform: rotate(-10deg);
 }
@@ -164,7 +176,13 @@ body {
   margin-top: 27rem;
   margin-left: -25%;
   width: 1.3vmin;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent, rgba(255, 255, 255, 0.2)), linear-gradient(to top, transparent 9%, #2a7a14, #8eff7c);
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2),
+      transparent,
+      rgba(255, 255, 255, 0.2)
+    ),
+    linear-gradient(to top, transparent 9%, #2a7a14, #8eff7c);
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
   transform: rotate(10deg);
 }
@@ -300,7 +318,6 @@ body {
 }
 
 @keyframes moving-flower-1 {
-
   0%,
   100% {
     transform: rotate(2deg);
@@ -308,7 +325,6 @@ body {
 
   50% {
     transform: rotate(-2deg);
-
   }
 }
 
@@ -340,7 +356,6 @@ body {
 }
 
 @keyframes flower-front {
-
   0%,
   100% {
     transform: rotate(-28deg) rotateY(30deg) scale(1.04);
@@ -390,7 +405,7 @@ nav ul li a {
   text-decoration: none;
   color: #fff;
   transition: color 0.3s ease;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Space Mono", monospace;
 }
 
 nav ul li a:hover {
@@ -399,7 +414,7 @@ nav ul li a:hover {
 
 .nav-text {
   font-size: 40px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Space Mono", monospace;
   color: white;
   margin-left: 20px;
 }
